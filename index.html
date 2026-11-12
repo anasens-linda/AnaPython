@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da Hello Kitty 🎀</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🎀 Mundo da Hello Kitty 🎀</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Ela</a></li>
+                    <li><a href="#amigos">Amigos</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hero" class="card">
+            <div class="kitty-svg">
+                <!-- Ilustração SVG da Hello Kitty -->
+                <svg viewBox="0 0 220 180" width="200" height="160">
+                    <!-- Orelhas -->
+                    <polygon points="35,65 25,15 75,40" fill="#ffffff" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
+                    <polygon points="185,65 195,15 145,40" fill="#ffffff" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
+                    <!-- Cabeça -->
+                    <ellipse cx="110" cy="100" rx="85" ry="65" fill="#ffffff" stroke="#222" stroke-width="4"/>
+                    <!-- Olhos -->
+                    <ellipse cx="70" cy="105" rx="6" ry="9" fill="#222"/>
+                    <ellipse cx="150" cy="105" rx="6" ry="9" fill="#222"/>
+                    <!-- Nariz -->
+                    <ellipse cx="110" cy="118" rx="8" ry="5" fill="#ffcc00" stroke="#222" stroke-width="3"/>
+                    <!-- Bigodes Esquerdos -->
+                    <line x1="15" y1="95" x2="45" y2="100" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="10" y1="112" x2="42" y2="112" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="18" y1="128" x2="46" y2="122" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <!-- Bigodes Direitos -->
+                    <line x1="205" y1="95" x2="175" y2="100" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="210" y1="112" x2="178" y2="112" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="202" y1="128" x2="174" y2="122" stroke="#222" stroke-width="4" stroke-linecap="round"/>
+                    <!-- Laço Vermelho -->
+                    <ellipse cx="145" cy="48" rx="18" ry="14" transform="rotate(20 145 48)" fill="#ff1e56" stroke="#222" stroke-width="4"/>
+                    <ellipse cx="180" cy="62" rx="18" ry="14" transform="rotate(20 180 62)" fill="#ff1e56" stroke="#222" stroke-width="4"/>
+                    <circle cx="162" cy="55" r="9" fill="#ff1e56" stroke="#222" stroke-width="4"/>
+                </svg>
+            </div>
+            <h2>Olá! Eu sou a Kitty White!</h2>
+            <p>Bem-vindo ao meu cantinho cheio de amizade, tortas de maçã e muita fofura.</p>
+            <button id="btn-carinho" class="btn">Mandar um Abraço 💕</button>
+            <p id="contador-texto">Abraços recebidos hoje: <span id="contador">0</span></p>
+        </section>
+
+        <section id="sobre" class="card">
+            <h2>✨ Quem é a Hello Kitty?</h2>
+            <p>Criada pela empresa japonesa Sanrio em 1974, a <strong>Kitty White</strong> nasceu nos subúrbios de Londres, na Inglaterra. Ela é uma garotinha alegre, bondosa e muito dedicada à família.</p>
+            <p>Seu lema é: <em>"Você nunca tem amigos demais!"</em></p>
+        </section>
+
+        <section id="amigos" class="card">
+            <h2>🌸 Turma da Sanrio</h2>
+            <div class="grid-amigos">
+                <div class="amigo-box">
+                    <h3>Mimmy</h3>
+                    <p>Irmã gêmea da Kitty. Ela usa um laço amarelo na orelha direita e é um pouco mais tímida.</p>
+                </div>
+                <div class="amigo-box">
+                    <h3>My Melody</h3>
+                    <p>Melhor amiga da Kitty. Adora assar biscoitos com sua mãe e usa um capuz rosa.</p>
+                </div>
+                <div class="amigo-box">
+                    <h3>Keroppi</h3>
+                    <p>Um sapinho energético que adora nadar, cantar e jogar beisebol na Lagoa Donut.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curiosidades" class="card">
+            <h2>🍎 Curiosidade Aleatória</h2>
+            <p id="texto-curiosidade">Clique no botão abaixo para descobrir um fato divertido sobre a Hello Kitty!</p>
+            <button id="btn-curiosidade" class="btn btn-secundario">Gerar Curiosidade</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com 💖 para fãs da Hello Kitty • 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
